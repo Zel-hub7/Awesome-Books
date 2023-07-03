@@ -21,11 +21,13 @@ function renderBooks() {
     const bookElement = document.createElement("div");
     bookElement.classList.add("book-item");
 
-    const titleElement = document.createElement("h3");
+    const titleElement = document.createElement("p");
     titleElement.textContent = `Title: ${book.title}`;
 
-    const authorElement = document.createElement("h3");
+    const authorElement = document.createElement("p");
     authorElement.textContent = `Author: ${book.author}`;
+
+
 
     const removeButton = document.createElement("button");
     removeButton.textContent = "Remove";
